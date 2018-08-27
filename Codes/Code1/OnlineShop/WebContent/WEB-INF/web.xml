@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>MyFirstWebApp</display-name>
+  <context-param>
+  <param-name>customercare</param-name>
+  <param-value>123456789</param-value>
+  </context-param>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
+  <servlet>
+  <init-param>
+  <param-name>toll</param-name>
+  <param-value>1800-1101-9999-2222</param-value>
+  </init-param>
+  <servlet-name>JSONServlet</servlet-name>
+  <servlet-class>com.brainmentors.app.JSONServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>JSONServlet</servlet-name>
+  <url-pattern>/jsondemo.shop</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

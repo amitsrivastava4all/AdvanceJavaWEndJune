@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/cache.js"></script>
+</head>
+<body>
+<h1>Login Form</h1>
+<form action="login" method="post">
+<input name="userid" type="text" placeholder="Type Userid Here" />
+<br />
+<input name="pwd" type="password" placeholder="Type Password Here" />
+<br />
+<textarea name="msg" cols="25" rows="10"></textarea>
+<select id="city">
+
+</select>
+<br>
+<select  name="lang" >
+<option value="">Select Lang</option>
+<option value="en">English</option>
+<option value="hi">Hindi</option>
+</select>
+<br>
+<!-- <select name="city">
+<option value="">Select City</option>
+<option value="10">Delhi</option>
+<option value="11">Mumbai</option>
+
+</select> -->
+
+
+<input type="submit"  value="Login"/>
+</form>
+Convert Currency
+<input type="text" placeholder="Source " id="source" />
+<input id="dest" placeholder="Dest " type="text" />
+<button onclick="convert()">Convert It </button>
+<h2 id="print"></h2>
+</body>
+</html>
