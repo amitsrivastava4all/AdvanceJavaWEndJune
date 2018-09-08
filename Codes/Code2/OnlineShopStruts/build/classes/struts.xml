@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	<struts>
+	
+	
+	<package name="default" extends="struts-default">
+	<action name="customer" 
+			class="com.brainmentors.actions.CustomerAction">
+			<result name="success">SuccessCustomer.jsp</result>
+			<result name="input">Customer.jsp</result>
+		</action>
+	<action name="welcome" class="com.brainmentors.actions.MyAction" method="sayHello">
+	<result name="success">/home.jsp</result>
+	</action>
+	<action name="loadlogin" class="com.brainmentors.actions.MyAction" method="loadlogin">
+	<result name="login">/login.jsp</result>
+	</action>
+	
+	<action name="checklogin" class="com.brainmentors.actions.MyAction" >
+	<result name="success">/dashboard.jsp</result>
+	<result name="error">/invalid.jsp</result>
+	<result name="input">/login.jsp</result>
+	</action>
+	</package>
+	
+	<constant name="struts.custom.i18n.resources" value="global" />
+	</struts>

@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+
+.content {
+font-family: sans-serif;
+font-size: small;
+}
+
+.content b {
+
+}
+
+.songTable {
+border-bottom: 1px, solid, black;
+border-top: 1px, solid, black;
+border-left: 1px, solid, black;
+border-right: 1px, solid, black;
+border-collapse: separate;
+padding: 4px;
+}
+
+.odd {
+background-color: yellow;
+}
+
+.even {
+background-color: olive;
+}
